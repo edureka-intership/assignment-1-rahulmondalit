@@ -1,58 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Search</title>
-  <style>
-    div{
-      top: 15px;
-      height: 75px;
-      font: normal normal medium 16px/25px Arial;
-      background: red 0% 0% no-repeat padding-box;
-    }  
 
-
-  </style>
+  <link rel="stylesheet" href="search.css">
 
 </head>
+
 <body>
-  <div>
-    <button style="border:0px;
-    width: 43px;
-    opacity: 1;
-    background-color: transparent;
-    color:white;
-    margin-top:20px;
-    margin-left:1180px;">Login</button>
+  <div class="header">
+    <div class="logo">e!</div>
 
-    <button style="border: 1px solid #FFFFFF;
-    border-radius: 3px;
-    opacity: 1;
-    margin-top:20px;
-    opacity: 1;
-    background-color: transparent;
-    color:white;
-    width: 152px;
-    height: 40px;">Create an account</button>
-
-    <p style="margin-top:-47px;
-             margin-left:80px;
-             width: 32px;
-             font: normal normal 600 40px/50px Arial;
-             letter-spacing: 0px;
-             opacity: 1;
-             color: #EB2929;
-             background: #FFFFFF 0% 0% no-repeat padding-box;
-             border-radius:30px;
-             width: 50px;
-             height: 52px;
-             text-align: center;">e!</p>
-
-          
+    <div class="login-container"></div>
+    <!-- -----------------------------------BUTTONS----------------------------------- -->
+    <button style="position: relative;
+          right:-1040px;
+          top: -10px;
+          border:0px solid;
+          color: white;
+          background-color: red;
+          font-size: 15px;
+          padding: 15px 12px;">Login
+    </button>
 
 
+    <button style="position:relative;
+          right:-1050px;
+          top: -10px;
+          border:white 1px solid;
+          color: white;
+          background-color: red;
+          font-size: 15px;
+          padding: 15px 12px;
+          border-radius:3px;">Create an Account
+    </button>
   </div>
+  </div></br>
+
+  <div>
+
+    <h2 class="breakfast">Breakfast Places in Mumbai</h2></br>
+
+    <!-- ------------------------Left Pane------------------------ -->
+
+    <div class="filterbox">
+      <p style="font: normal normal 600 18px/27px Poppins; margin-left:10%;">Filters</p>
+      <!-------------------select location------------------->
+      <p style="font-size: medium; margin-left: 10%;font: normal normal 14px/27px Poppins; margin-top: -10px;">Select
+        Location</p>
+      <select class="selectlocation" style="font: normal norma 18px/27px Poppins;">
+        <option value="0">&nbsp &nbspSelect Location</option>
+        <option value="1">Pune</option>
+        <option value="2">Nagpur</option>
+        <option value="3">Kolkata</option>
+      </select>
+      <!-------------------select location------------------->
+
+      <!-------------------Cuisine------------------->
+      <p style="font-size: medium; margin-left: 10%; margin-bottom: 5px;font: normal normal normal 14px/21px Poppins;">
+        Cuisine</p>
+
+      <input type="checkbox" id="North Indian" name="North Indian" value="North Indian"
+        style="margin-left: 10%; margin-top: -10%;" class="cuisinecheckbox">
+      <label for="North Indian" class="cuisinecheckboxtext"> North Indian</label><br>
+
+      <input type="checkbox" id="South Indian" name="South Indian" value="South Indian" style="margin-left: 10%;"
+        class="cuisinecheckbox">
+      <label for="South Indian" class="cuisinecheckboxtext"> South Indian</label><br>
+
+      <input type="checkbox" id="Chinese" name="Chinese" value="Chinese" style="margin-left: 10%;"
+        class="cuisinecheckbox">
+      <label for="Chinese" class="cuisinecheckboxtext"> Chinese</label><br>
+
+      <input type="checkbox" id="Fast Food" name="Fast Food" value="Fast Food" style="margin-left: 10%;"
+        class="cuisinecheckbox">
+      <label for="Fast Food" class="cuisinecheckboxtext"> Fast Food</label><br>
+
+      <input type="checkbox" id="Street Food" name="Street Food" value="Street Food" style="margin-left: 10%;"
+        class="cuisinecheckbox">
+      <label for="Street Food" class="cuisinecheckboxtext"> Street Food</label><br>
+      <!-------------------Cuisine------------------->
+
+
+      <!-------------------Cost for Two------------------->
+      <p style="font-size: medium; margin-left: 10%; margin-bottom: 5px;font: normal normal normal 14px/21px Poppins;">
+        Cost For Two</p>
+
+      <input type="radio" id="Less than ` 500" name="Less than ` 500" value="Less than ` 500" style="margin-left: 10%;"
+        class="costfortworadio">
+      <label for="Less than ` 500" class="costfortwo"> Less than ` 500</label><br>
+
+      <input type="radio" id="` 500 to ` 1000" name="` 500 to ` 1000" value="` 500 to ` 1000" style="margin-left: 10%;"
+        class="costfortworadio">
+      <label for="` 500 to ` 1000" class="costfortwo"> ` 500 to ` 1000</label><br>
+
+      <input type="radio" id="` 1000 to ` 1500" name="` 1000 to ` 1500" value="` 1000 to ` 1500"
+        style="margin-left: 10%;" class="costfortworadio">
+      <label for="` 1000 to ` 1500" class="costfortwo"> ` 1000 to ` 1500</label><br>
+
+      <input type="radio" id="` 1500 to ` 2000" name="` 1500 to ` 2000" value="` 1500 to ` 2000"
+        style="margin-left: 10%;" class="costfortworadio">
+      <label for="` 1500 to ` 2000" class="costfortwo"> ` 1500 to ` 2000</label><br>
+
+      <input type="radio" id="` 2000+" name="Street Food" value="` 2000+" style="margin-left: 10%;"
+        class="costfortworadio">
+      <label for="` 2000+" class="costfortwo"> ` 2000+</label><br>
+      <!-------------------Cost for Two------------------->
+
+      <!-------------------Sort------------------->
+
+      <p
+        style="font-size: medium; margin-left: 10%; margin-bottom: 5px;font: normal normal normal 600 14px/21px Poppins;">
+        Sort</p>
+
+      <input type="radio" id="Price low to high" name="Price low to high" value="Price low to high"
+        style="margin-left: 10%;" class="costfortworadio">
+      <label for="Price low to high" class="costfortwo"> Price low to high</label><br>
+
+      <input type="radio" id="Price high to low" name="Price high to low" value="Price high to low"
+        style="margin-left: 10%;" class="costfortworadio">
+      <label for="Price high to low" class="costfortwo"> Price high to low</label><br><br>
+      <!-------------------Sort------------------->
+      <!-- ------------------------Left Pane------------------------ -->
+    </div>
+  </div>
+
+
+  <!-- ------------------------------Images Pane------------------------------ -->
+
+  <div class="menuitem1">
+    <img src="HTML\assignment-1-rahulmondalit\Images\idli.png" alt="Idli">
+      <p class="menuitem1text">The Big Chill Cakery</p>
+         <h4 style=" margin-left: 30%; margin-top: -3%; text-align: left;
+                    Text-align: left;
+                    font: normal normal medium 16px/30px Poppins;
+                    color: #192F60;
+                    opacity: 1;">FORT</h4>
+
+
+                    <h4 style=" margin-left: 30%; margin-top: -3%; text-align: left;
+                    Text-align: left;
+                    font: normal normal normal 15px/30px Poppins;
+                    color:  #b1b1b2;
+                    opacity: 1;">Shop 1, Plot D, Samruddhi Complex, Chincholi …</h4>
+                    <hr style="height:0.5px; width:700px; color:rgb(167, 164, 164);background-color:rgb(160, 160, 160);opacity: 20%">
+
+                    <h4 style=" margin-left: 5%; margin-top: 0%; text-align: left;
+                      Text-align: left;
+                      font: normal normal normal 15px/30px Poppins;
+                      color: #636F88;
+                      opacity: 1;">CUISINES:<br> COST FOR TWO:</h4>
+
+                      <h4 style=" margin-left: 32%; margin-top: -80px; 
+                      font: normal normal  15px/30px Poppins;
+                      color: #192F60;
+                      opacity: 1;">Bakery<br> ₹700</h4>
+  </div>
+<div>
+  <div class=" menuitem2">
+      <img src="HTML\assignment-1-rahulmondalit\Images\idli.png" alt="Idli">
+        <p class="menuitem1text">The Bake Shop</p>
+          <h4 style=" margin-left: 30%; margin-top: -3%; text-align: left;
+                      Text-align: left;
+                      font: normal normal medium 16px/30px Poppins;
+                      color: #192F60;
+                      opacity: 1;">FORT</h4>
+
+
+                      <h4 style=" margin-left: 30%; margin-top: -3%; text-align: left;
+                      font: normal normal normal 15px/30px Poppins;
+                      color: #b1b1b2;
+                      opacity: 1;">Shop 1, Plot D, Samruddhi Complex, Chincholi …</h4>
+                      <hr style="height:1px; width:700px; color:rgb(167, 164, 164);background-color:rgb(160, 160, 160);opacity: 20%;">
+
+                      <h4 style=" margin-left: 5%; margin-top: 0%; text-align: left;
+
+                      font: normal normal normal 15px/30px Poppins;
+                      color: #636F88;
+                      opacity: 1;">CUISINES:<br> COST FOR TWO:</h4>
+
+                      <h4 style=" margin-left: 32%; margin-top: -80px; 
+                      font: normal normal  15px/30px Poppins;
+                      color: #192F60;
+                      opacity: 1;">Bakery<br> ₹700</h4>
+
+      <div style="margin-left: 25%;">
+    
+        <button class="searchfooter"> < </button>&nbsp &nbsp
+        <button class="searchfooter">1</button>&nbsp &nbsp
+        <button class="searchfooter">2</button>&nbsp &nbsp
+        <button class="searchfooter">3</button>&nbsp &nbsp
+        <button class="searchfooter">4</button>&nbsp &nbsp
+        <button class="searchfooter">5</button>&nbsp &nbsp
+        <button class="searchfooter">></button>&nbsp &nbsp
+      </div>
+    </div>
+</div>
+
+  <!-- ------------------------------Images Pane------------------------------ -->
+
 </body>
+
 </html>

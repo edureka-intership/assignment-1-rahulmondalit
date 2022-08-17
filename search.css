@@ -1,0 +1,176 @@
+
+    .header {
+      height: 80px;
+      background-color: red;
+    }
+
+    .logo {
+      background-color: white;
+      width: 55px;
+      height: 55px;
+      display: inline-block;
+      border-radius: 50%;
+      color: red;
+      text-align: center;
+      font-size: 45px;
+      font-family: Arial;
+      font-weight: bold;
+      margin-left: 80px;
+      margin-top: 11px;
+    
+    }
+
+    .login-container {
+      float: right;
+    }
+
+    .breakfast {
+      font: normal normal bold 36px/55px Poppins;
+      color: #192F60;
+      margin-left: 90px;
+      margin-top: 0%;
+    }
+
+    .filterbox {
+      display: inline-block;
+      margin-left: 6%;
+      width: 15%;
+      margin-top: -2%;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 6px #00000029;
+      opacity: 50;
+      font: normal normal normal 14px/21px Poppins;
+    }
+
+    .selectlocation{
+      margin-left:10%;
+      width: 75%;
+      height: 30px;
+      border: 1px solid #8C96AB;
+      border-radius: 3px;
+      opacity:50%;
+      margin-top: -10px;
+      font: normal normal normal 14px/21px Poppins;     
+}
+    .cuisinecheckbox{
+      margin-top: 5px;
+      width: 18px;
+      height: 18px;
+      padding: 0;
+      border: 2px solid #3A5075;
+      border-radius: 2px;
+      opacity: 1;
+      top:-10px;
+      vertical-align: bottom;
+      position: relative;
+      top: 3px;
+    }
+
+    .cuisinecheckboxtext{
+      color: #8C96AB;
+      font: normal normal normal 14px/21px Poppins;
+    }
+
+    .costfortworadio{
+      margin-top: 5px;
+      width: 18px;
+      height: 18px;
+      padding: 0;
+      border: 2px solid #3A5075;
+      border-radius: 2px;
+      opacity: 1;
+      vertical-align: bottom;
+      position: relative;
+      top: -1px;  
+    }
+     
+    .costfortwo{
+      color: #8C96AB;
+      font: normal normal normal 14px/21px Poppins;
+    }
+
+    .sortpriceradio{
+      margin-top: 5px;
+      width: 18px;
+      height: 18px;
+      padding: 0;
+      border: 2px solid #3A5075;
+      border-radius: 2px;
+      opacity: 1;
+      vertical-align: bottom;
+      position: relative;
+      top: -1px;  
+    }
+
+    .sortprice{
+      color: #8C96AB;
+    }
+
+    .menuitem1{
+      display: block;
+      width: 55%;
+      height: 225px;
+      top: 10%;
+      margin-left: 25%;
+      margin-top: -36%;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 6px #00000029;
+      opacity: 50;
+      font: normal normal normal 14px/21px Poppins;
+    }
+    .menuitem2{
+      display: block;
+      width: 55%;
+      height: 225px;
+      top: 10%;
+      margin-left: 25%;
+      margin-top: 2%;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 6px #00000029;
+      opacity: 50;
+      font: normal normal normal 14px/21px Poppins;
+    }
+
+    .menuitem1text{
+  
+      width: 303px;
+      height: 43px;
+      text-align: left;
+      font: normal normal 600 30px/46px Poppins;
+      letter-spacing: 0px;
+      color: #192F60;
+      opacity: 1;
+      margin-left: 30%;
+      margin-top: 0%;
+
+    }
+
+    .menuitem2text{
+     
+      width: 303px;
+      height: 43px;
+      text-align: left;
+      font: normal normal 600 30px/46px Poppins;
+      letter-spacing: 0px;
+      color: #192F60;
+      opacity: 1;
+      margin-left: 30%;
+      margin-top: 0%;
+
+    }
+
+    .searchfooter{
+    width: 36px;
+    height: 36px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #8C96AB;
+    border-radius: 7px;
+    opacity: 1;
+    color: #8C96AB;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5% 1%;
+    cursor: pointer;
+    font: normal normal medium 20px/30px Poppins;
+  }
